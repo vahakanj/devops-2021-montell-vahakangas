@@ -6,10 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "build:ci": "ng build --prod",
-    "test": "ng test",
     "test:ci": "ng test --no-watch --browsers=ChromeHeadless",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test": "jest --watchAll --config=jestconfig.json"
   },
   "private": true,
   "dependencies": {
@@ -37,6 +37,7 @@
     "codelyzer": "~4.3.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
+    "jest": "^27.3.1",
     "karma": "~3.0.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
